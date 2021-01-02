@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="689.0" prefWidth="611.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.MenuBars">
+    <children>
+      <ImageView fitHeight="126.0" fitWidth="200.0" layoutX="406.0" layoutY="555.0">
+         <image>
+            <Image url="https://www.salesforce.org/wp-content/uploads/1905/02/WayneState.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="126.0" fitWidth="200.0" layoutX="6.0" layoutY="555.0">
+         <image>
+            <Image url="https://www.salesforce.org/wp-content/uploads/1905/02/WayneState.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="126.0" fitWidth="200.0" layoutX="205.0" layoutY="557.0">
+         <image>
+            <Image url="https://www.salesforce.org/wp-content/uploads/1905/02/WayneState.png" />
+         </image>
+      </ImageView>
+        <ImageView fitHeight="126.0" fitWidth="200.0" layoutX="203.0" layoutY="450.0">
+            <image>
+                <Image url="https://www.salesforce.org/wp-content/uploads/1905/02/WayneState.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="126.0" fitWidth="200.0" layoutX="405.0" layoutY="340.0">
+            <image>
+                <Image url="https://www.salesforce.org/wp-content/uploads/1905/02/WayneState.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="126.0" fitWidth="200.0" layoutX="4.0" layoutY="448.0">
+            <image>
+                <Image url="https://www.salesforce.org/wp-content/uploads/1905/02/WayneState.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="126.0" fitWidth="200.0" layoutX="404.0" layoutY="448.0">
+            <image>
+                <Image url="https://www.salesforce.org/wp-content/uploads/1905/02/WayneState.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="126.0" fitWidth="200.0" layoutX="204.0" layoutY="342.0">
+            <image>
+                <Image url="https://www.salesforce.org/wp-content/uploads/1905/02/WayneState.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="126.0" fitWidth="200.0" layoutX="5.0" layoutY="340.0">
+            <image>
+                <Image url="https://www.salesforce.org/wp-content/uploads/1905/02/WayneState.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="126.0" fitWidth="200.0" layoutX="196.0" layoutY="118.0">
+            <image>
+                <Image url="https://www.salesforce.org/wp-content/uploads/1905/02/WayneState.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="126.0" fitWidth="200.0" layoutX="197.0" layoutY="239.0">
+            <image>
+                <Image url="https://www.salesforce.org/wp-content/uploads/1905/02/WayneState.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="126.0" fitWidth="200.0" layoutX="199.0" layoutY="19.0">
+            <image>
+                <Image url="https://www.salesforce.org/wp-content/uploads/1905/02/WayneState.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="126.0" fitWidth="200.0" layoutX="-3.0" layoutY="116.0">
+            <image>
+                <Image url="https://www.salesforce.org/wp-content/uploads/1905/02/WayneState.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="126.0" fitWidth="200.0" layoutX="397.0" layoutY="116.0">
+            <image>
+                <Image url="https://www.salesforce.org/wp-content/uploads/1905/02/WayneState.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="126.0" fitWidth="200.0" layoutX="-2.0" layoutY="237.0">
+            <image>
+                <Image url="https://www.salesforce.org/wp-content/uploads/1905/02/WayneState.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="126.0" fitWidth="200.0" layoutX="398.0" layoutY="237.0">
+            <image>
+                <Image url="https://www.salesforce.org/wp-content/uploads/1905/02/WayneState.png" />
+            </image>
+        </ImageView>
+        <Button fx:id="addsort" layoutX="146.0" layoutY="254.0" mnemonicParsing="false" onAction="#addandsort" prefHeight="34.0" prefWidth="306.0" text="Add Sort Inventory" />
+        <Button fx:id="Loyalty" layoutX="146.0" layoutY="211.0" mnemonicParsing="false" onAction="#displayloyalty" prefHeight="34.0" prefWidth="306.0" text="Display Loyalty" />
+        <Button fx:id="orderss" layoutX="146.0" layoutY="168.0" mnemonicParsing="false" onAction="#orderss" prefHeight="34.0" prefWidth="306.0" text="Create Order/ Display Order" />
+        <Button fx:id="displayCu" layoutX="146.0" layoutY="125.0" mnemonicParsing="false" onAction="#Displaycu" prefHeight="34.0" prefWidth="306.0" text="Display Customer" />
+        <Text fill="#036c03" layoutX="198.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Wayne State Store ">
+            <font>
+                <Font name="System Bold Italic" size="24.0" />
+            </font>
+        </Text>
+        <Button fx:id="end" cancelButton="true" layoutX="146.0" layoutY="641.0" mnemonicParsing="false" onAction="#exitstore" prefHeight="34.0" prefWidth="306.0" text="Log Out" />
+        <ImageView fitHeight="126.0" fitWidth="200.0" layoutX="400.0">
+            <image>
+                <Image url="https://www.salesforce.org/wp-content/uploads/1905/02/WayneState.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="126.0" fitWidth="200.0">
+            <image>
+                <Image url="https://www.salesforce.org/wp-content/uploads/1905/02/WayneState.png" />
+            </image>
+        </ImageView>
+        <Button fx:id="SearchDisplayPrice" layoutX="146.0" layoutY="297.0" mnemonicParsing="false" onAction="#SearchDisplayPrice" prefHeight="34.0" prefWidth="306.0" text="Search Item / Change Price" />
+        <Button fx:id="displayVendor" layoutX="146.0" layoutY="82.0" mnemonicParsing="false" onAction="#DisplayVen" prefHeight="34.0" prefWidth="306.0" text="Display Vendor" />
+        <Button fx:id="AddVendor" layoutX="145.0" layoutY="39.0" mnemonicParsing="false" onAction="#Addven" prefHeight="34.0" prefWidth="306.0" text="Add Vendor" />
+        <Button fx:id="DisplaySalesData1" layoutX="146.0" layoutY="340.0" mnemonicParsing="false" onAction="#DisplaySalesData" prefHeight="34.0" prefWidth="306.0" text="Display Sales Data" />
+        <Button fx:id="accPay" cancelButton="true" layoutX="146.0" layoutY="383.0" mnemonicParsing="false" onAction="#acceptPayment" prefHeight="34.0" prefWidth="306.0" text="Accept Payment" />
+        <Button fx:id="DisplayPaymentMethod" cancelButton="true" layoutX="146.0" layoutY="426.0" mnemonicParsing="false" onAction="#DisplayPaymentMethod" prefHeight="34.0" prefWidth="306.0" text="Display Payment Method" />
+        <Button fx:id="incomePage" cancelButton="true" layoutX="146.0" layoutY="469.0" mnemonicParsing="false" onAction="#incomeCalc" prefHeight="34.0" prefWidth="306.0" text="Income Numbers" />
+        <Button fx:id="OpenAndDeleteInvoice" cancelButton="true" layoutX="146.0" layoutY="512.0" mnemonicParsing="false" onAction="#OpenAndDeleteInvoice" prefHeight="34.0" prefWidth="306.0" text="Open And Delete Invoice" />
+      <Button fx:id="inventoryAlert" cancelButton="true" layoutX="146.0" layoutY="555.0" mnemonicParsing="false" onAction="#inventoryAlertClick" prefHeight="34.0" prefWidth="306.0" text="Inventory Stock" />
+      <Button fx:id="end1" cancelButton="true" layoutX="146.0" layoutY="598.0" mnemonicParsing="false" onAction="#Checkexp" prefHeight="34.0" prefWidth="306.0" text="Check Expiration" />
+    </children>
+</AnchorPane>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="200.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.CheckInventoryStock">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="32.0" layoutY="79.0" prefHeight="17.0" prefWidth="365.0" text="Label">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="stock1" alignment="CENTER" layoutX="97.0" layoutY="14.0" prefHeight="17.0" prefWidth="235.0" text="Stock Alert">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Button fx:id="closeAlert1" layoutX="364.0" layoutY="152.0" mnemonicParsing="false" onAction="#closeAlert" text="Close " />
+   </children>
+</AnchorPane>

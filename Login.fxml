@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Login">
+    <children>
+        <ImageView fitHeight="300.0" fitWidth="300.0">
+            <image>
+                <Image url="https://cdn.shopify.com/s/files/1/0241/9737/products/WSU-1021-gold_2_39df88dc-ff2a-4849-9092-2a713602ecbe_1800x.jpg?v=1571442911" />
+            </image>
+        </ImageView>
+        <Button layoutX="57.0" layoutY="235.0" mnemonicParsing="false" onAction="#Login" text="Submit" />
+        <TextField fx:id="loginfxuser" layoutX="38.0" layoutY="80.0" promptText="UserName">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </TextField>
+        <PasswordField fx:id="loginfxpass" layoutX="38.0" layoutY="138.0" promptText="Password">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </PasswordField>
+        <Label fx:id="loginfx" layoutX="74.0" layoutY="-1.0" prefHeight="39.0" prefWidth="206.0" text="Wayne State Store" textAlignment="CENTER" textFill="GREEN">
+            <font>
+                <Font name="System Bold Italic" size="18.0" />
+            </font>
+        </Label>
+        <Button fx:id="Close" cancelButton="true" layoutX="196.0" layoutY="235.0" mnemonicParsing="false" onAction="#finish" text="Close" />
+        <Label fx:id="loginfx11" layoutX="27.0" layoutY="272.0" prefHeight="27.0" prefWidth="245.0" textFill="RED">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Label fx:id="loginfx1" layoutX="54.0" layoutY="18.0" prefHeight="39.0" prefWidth="206.0" text="                Login" textFill="GREEN">
+            <font>
+                <Font name="System Bold Italic" size="18.0" />
+            </font>
+        </Label>
+        <Button layoutX="101.0" layoutY="186.0" mnemonicParsing="false" onAction="#createaccount" text="Create Account" />
+    </children>
+</AnchorPane>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="160.0" prefWidth="200.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Validate">
+   <children>
+      <Button fx:id="Submit2" layoutX="26.0" layoutY="109.0" mnemonicParsing="false" onAction="#Submit" text="Submit" />
+      <TextField fx:id="Input" layoutX="26.0" layoutY="64.0" />
+      <Label layoutX="22.0" layoutY="14.0" text="Manager Code">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="Close" layoutX="130.0" layoutY="109.0" mnemonicParsing="false" onAction="#Close" text="Close" />
+      <Label fx:id="Label2" layoutX="26.0" layoutY="137.0" prefHeight="18.0" prefWidth="149.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="10.0" prefHeight="364.0" prefWidth="756.0" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.CreateOrder">
+    <children>
+        <Pane prefHeight="392.0" prefWidth="756.0" style="-fx-background-color: #0c5449#0c5449;" GridPane.rowIndex="2">
+            <children>
+                <TextField fx:id="customerName" layoutX="28.0" layoutY="33.0" />
+                <TextField fx:id="customerPhone" layoutX="29.0" layoutY="83.0" />
+                <TextField fx:id="customerEmail" layoutX="208.0" layoutY="83.0" />
+                <TextField fx:id="itemType" layoutX="29.0" layoutY="138.0" />
+                <TextField fx:id="pricePerItem" layoutX="208.0" layoutY="138.0" />
+                <TextField fx:id="itemQuantity" layoutX="30.0" layoutY="193.0" />
+                <Label layoutX="62.0" layoutY="13.0" text="Customer Name" textFill="#ffcc33">
+                    <font>
+                        <Font name="PT Sans" size="13.0" />
+                    </font>
+                </Label>
+                <Label layoutX="57.0" layoutY="66.0" text="Customer Phone #" textFill="#ffcc33">
+                    <font>
+                        <Font name="PT Sans" size="13.0" />
+                    </font>
+                </Label>
+                <Label layoutX="244.0" layoutY="66.0" text="Customer Email" textFill="#ffcc33">
+                    <font>
+                        <Font name="PT Sans" size="13.0" />
+                    </font>
+                </Label>
+                <Label layoutX="64.0" layoutY="121.0" text="Item Description" textFill="#ffcc33">
+                    <font>
+                        <Font name="PT Sans" size="13.0" />
+                    </font>
+                </Label>
+                <Label layoutX="250.0" layoutY="121.0" text="Price Per Item" textFill="#ffcc33">
+                    <font>
+                        <Font name="PT Sans" size="13.0" />
+                    </font>
+                </Label>
+                <Label layoutX="85.0" layoutY="176.0" text="Quantity" textFill="#ffcc33">
+                    <font>
+                        <Font name="PT Sans" size="13.0" />
+                    </font>
+                </Label>
+                <Button fx:id="exitClick1" layoutX="578.0" layoutY="295.0" mnemonicParsing="false" onAction="#exitClick" prefHeight="46.0" prefWidth="160.0" text="Exit" textFill="#0c5449">
+                    <font>
+                        <Font name="PT Sans" size="14.0" />
+                    </font>
+                </Button>
+                <TextArea fx:id="poPrintable" layoutX="432.0" layoutY="33.0" prefHeight="155.0" prefWidth="276.0" text="Add Item Before Generating Purchase Order" />
+
+                <TextField fx:id="customerAdd" layoutX="205.0" layoutY="31.0" />
+                <TextField fx:id="poNumber" layoutX="27.0" layoutY="250.0" />
+                <Label layoutX="239.0" layoutY="14.0" text="Customer Address" textFill="#ffcc33">
+                    <font>
+                        <Font name="PT Sans" size="13.0" />
+                    </font>
+                </Label>
+                <Label layoutX="56.0" layoutY="231.0" text="Purchase Order Id" textFill="#ffcc33">
+                    <font>
+                        <Font name="PT Sans" size="13.0" />
+                    </font>
+                </Label>
+                <Label layoutX="232.0" layoutY="231.0" text="Purchase Order Date" textFill="#ffcc33">
+                    <font>
+                        <Font name="PT Sans" size="13.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="poDate" layoutX="206.0" layoutY="250.0" prefHeight="27.0" prefWidth="160.0" />
+                <Button fx:id="clearClick" layoutX="404.0" layoutY="225.0" mnemonicParsing="false" onAction="#clearClick" prefHeight="46.0" prefWidth="160.0" text="Clear The Fields" textFill="#0c5449">
+                    <font>
+                        <Font name="PT Sans" size="13.0" />
+                    </font>
+                </Button>
+                <Button fx:id="resultClick" layoutX="209.0" layoutY="295.0" mnemonicParsing="false" onAction="#resultClick" prefHeight="46.0" prefWidth="160.0" text="Generate Purchase Order" textFill="#0c5449">
+                    <font>
+                        <Font name="PT Sans" size="13.0" />
+                    </font>
+                </Button>
+                <TextField fx:id="itemCode" layoutX="209.0" layoutY="193.0" />
+                <Label layoutX="258.0" layoutY="176.0" text="Item Code" textFill="#ffcc33">
+                    <font>
+                        <Font name="PT Sans" size="13.0" />
+                    </font>
+                </Label>
+                <Button fx:id="addItemClick" layoutX="26.0" layoutY="295.0" mnemonicParsing="false" onAction="#addItemClick" prefHeight="46.0" prefWidth="160.0" text="Add Item" textFill="#0c5449">
+                    <font>
+                        <Font name="PT Sans" size="13.0" />
+                    </font>
+                </Button>
+                <Button layoutX="578.0" layoutY="227.0" mnemonicParsing="false" onAction="#emailClick" prefHeight="46.0" prefWidth="160.0" text="Email Purchase Order" textFill="#0c5449">
+                    <font>
+                        <Font name="PT Sans" size="13.0" />
+                    </font>
+                </Button>
+                <Button layoutX="404.0" layoutY="295.0" mnemonicParsing="false" onAction="#deleteClick" prefHeight="46.0" prefWidth="160.0" text="Delete PO" textFill="#0c5449">
+                    <font>
+                        <Font name="PT Sans" size="13.0" />
+                    </font>
+                </Button>
+            </children>
+         <GridPane.margin>
+            <Insets top="-23.0" />
+         </GridPane.margin>
+        </Pane>
+    </children>
+    <columnConstraints>
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints maxHeight="0.0" minHeight="0.0" prefHeight="0.0" />
+        <RowConstraints maxHeight="0.0" minHeight="0.0" prefHeight="0.0" />
+        <RowConstraints />
+    </rowConstraints>
+</GridPane>

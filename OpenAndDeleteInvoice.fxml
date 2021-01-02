@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.OpenAndDeleteInvoice">
+   <children>
+      <Text layoutX="33.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter the Invoice number to delete: " wrappingWidth="258.93670654296875" />
+      <Button fx:id="delete" layoutX="33.0" layoutY="68.0" mnemonicParsing="false" onAction="#deleteInvoice" text="Delete" />
+      <TextField fx:id="input" layoutX="120.0" layoutY="68.0" />
+      <Text layoutX="33.0" layoutY="131.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter the Invoice number to open:" wrappingWidth="236.26214599609375" />
+      <Button fx:id="open" layoutX="32.0" layoutY="155.0" mnemonicParsing="false" onAction="#openInvoice" prefHeight="26.0" prefWidth="50.0" text="Open" />
+      <TextField fx:id="output" layoutX="120.0" layoutY="156.0" />
+      <Label fx:id="lab" layoutX="26.0" layoutY="303.0" prefHeight="43.0" prefWidth="236.0" />
+      <Button fx:id="exit" layoutX="83.0" layoutY="232.0" mnemonicParsing="false" onAction="#Exit" prefHeight="26.0" prefWidth="149.0" text="Click to Exit" />
+   </children>
+</AnchorPane>

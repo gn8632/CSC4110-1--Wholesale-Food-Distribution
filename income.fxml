@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="336.0" prefWidth="726.0" style="-fx-background-color: #ffcc33#ffcc33;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.IncomeDisplay">
+   <bottom>
+      <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="304.0" prefWidth="719.0" style="-fx-background-color: #0c5449#0c5449;" BorderPane.alignment="CENTER">
+         <children>
+            <VBox layoutX="75.0" layoutY="6.0" prefHeight="280.0" prefWidth="850.0" style="-fx-background-radius: 30 0 30 0; -fx-border-radius: 0 0 30 30;" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="40.0">
+               <children>
+                  <HBox prefWidth="645.0" style="-fx-background-color: #e5e5e5; -fx-background-radius: 10;">
+                     <children>
+                        <Label text="Income Dashboard" textFill="#0c5449">
+                           <font>
+                              <Font name="Arial Bold" size="19.0" />
+                           </font>
+                        </Label>
+                        <Separator orientation="VERTICAL">
+                           <HBox.margin>
+                              <Insets left="10.0" right="10.0" />
+                           </HBox.margin>
+                        </Separator>
+                        <Label layoutX="25.0" layoutY="25.0" text="WSU INC" textFill="#0c5449">
+                           <font>
+                              <Font name="Arial Bold" size="19.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="151.0" layoutY="25.0" maxWidth="1.7976931348623157E308" textFill="#0c5449" HBox.hgrow="ALWAYS">
+                           <font>
+                              <Font name="Arial Bold" size="19.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+                     </padding>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="942.0" style="-fx-background-radius: 10;">
+                     <children>
+                        <VBox prefHeight="111.0" prefWidth="324.0">
+                           <children>
+                              <AnchorPane prefHeight="88.0" prefWidth="324.0">
+                                 <children>
+                                    <AnchorPane layoutY="-2.0" prefHeight="183.0" prefWidth="317.0" style="-fx-background-radius: 10; -fx-background-color: #d3d3d3;">
+                                       <children>
+                                          <Label layoutX="15.0" layoutY="8.0" text="YTD Net Income" textFill="#0c5449">
+                                             <padding>
+                                                <Insets left="15.0" top="15.0" />
+                                             </padding>
+                                             <font>
+                                                <Font name="Arial" size="19.0" />
+                                             </font>
+                                          </Label>
+                                          <TextArea fx:id="netIncomeBox" layoutX="35.0" layoutY="78.0" prefHeight="43.0" prefWidth="200.0" />
+                                          <Button fx:id="netIncomeObj" layoutX="58.0" layoutY="138.0" mnemonicParsing="false" onAction="#netIncomeClick" text="Show YTD Net Income" />
+                                       </children>
+                                    </AnchorPane>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </VBox>
+                        <AnchorPane prefHeight="234.0" prefWidth="376.0">
+                           <children>
+                              <AnchorPane layoutX="13.0" prefHeight="183.0" prefWidth="317.0" style="-fx-background-color: #d3d3d3; -fx-background-radius: 10;">
+                                 <children>
+                                    <Label layoutX="11.0" layoutY="3.0" text="YTD Gross Income" textFill="#0c5449">
+                                       <padding>
+                                          <Insets left="15.0" top="15.0" />
+                                       </padding>
+                                       <font>
+                                          <Font name="Arial" size="19.0" />
+                                       </font>
+                                    </Label>
+                                    <TextArea fx:id="grossIncomeBox" layoutX="29.0" layoutY="80.0" prefHeight="43.0" prefWidth="200.0" />
+                                    <Button fx:id="grossIncomeObj" layoutX="44.0" layoutY="137.0" mnemonicParsing="false" onAction="#grossIncomeClick" text="Show YTD Gross Income" />
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                     <padding>
+                        <Insets bottom="15.0" top="10.0" />
+                     </padding>
+                  </HBox>
+                  <Button fx:id="Close" cancelButton="true" mnemonicParsing="false" onAction="#finish" text="Close" />
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </bottom>
+</BorderPane>

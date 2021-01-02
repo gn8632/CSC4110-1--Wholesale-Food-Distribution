@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="301.0" prefWidth="514.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.CreditCardMain">
+    <children>
+        <ImageView fitHeight="200.0" fitWidth="166.0" layoutX="115.0" layoutY="-200.0">
+            <image>
+                <Image url="https://images.fineartamerica.com/images/artworkimages/medium/2/1-first-national-bank-of-dad-closed-funny-design-for-dads-hope-and-hobby-transparent.png" />
+            </image>
+        </ImageView>
+        <TextField fx:id="creditCardNum" layoutX="169.0" layoutY="155.0" prefHeight="35.0" prefWidth="317.0" promptText="Credit Card Number" />
+        <TextField fx:id="creditCardCode" layoutX="169.0" layoutY="201.0" prefHeight="27.0" prefWidth="58.0" promptText="Code" />
+        <TextField fx:id="cardExpDate" layoutX="394.0" layoutY="201.0" prefHeight="27.0" prefWidth="73.0" promptText="Date" />
+        <TextField fx:id="cardName" layoutX="169.0" layoutY="240.0" prefHeight="27.0" prefWidth="208.0" promptText="Name" />
+        <ImageView fitHeight="83.0" fitWidth="149.0" layoutX="124.0" layoutY="66.0">
+            <image>
+                <Image url="https://i.ibb.co/zh8c0fF/card-chip-800x450.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="44.0" fitWidth="249.0" layoutX="245.0" layoutY="14.0">
+            <image>
+                <Image url="https://i.ibb.co/myQ3Cpg/credit-card-icons-png-palmers-security-solutions-accept-credit-card-png-1000-154.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="200.0" fitWidth="166.0" layoutY="7.0">
+            <image>
+                <Image url="https://images.fineartamerica.com/images/artworkimages/medium/2/1-first-national-bank-of-dad-closed-funny-design-for-dads-hope-and-hobby-transparent.png" />
+            </image>
+        </ImageView>
+        <Button fx:id="submitButton" layoutX="29.0" layoutY="240.0" mnemonicParsing="false" onAction="#submitButtonClick" text="Submit Payment" />
+      <Label fx:id="ccStatus" layoutX="29.0" layoutY="267.0" prefHeight="17.0" prefWidth="108.0" />
+      <Button fx:id="Close" layoutX="448.0" layoutY="263.0" mnemonicParsing="false" onAction="#Close" text="Close" />
+    </children>
+</AnchorPane>
